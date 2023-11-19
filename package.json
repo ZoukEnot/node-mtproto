@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "demo": "tsx examples/demo-request.ts",
     "generate-tl": "npm run generate-builder && npm run generate-parser",
     "generate-builder": "node scripts/generate-builder.js",
     "generate-parser": "node scripts/generate-parser.js",
