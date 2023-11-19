@@ -1,0 +1,35 @@
+{
+  "name": "mtproto-client",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "generate-tl": "npm run generate-builder && npm run generate-parser",
+    "generate-builder": "node scripts/generate-builder.js",
+    "generate-parser": "node scripts/generate-parser.js",
+    "lint": "eslint --ext .ts src/**",
+    "lint:fix": "npm run lint --fix .",
+    "typecheck": "tsc --noEmit",
+    "build": "rm -rf ./dist && tsc --project tsconfig.cjs.json",
+    "test": "jest"
+  },
+  "dependencies": {
+    "aes-js": "3.1.2",
+    "big-integer": "1.6.51",
+    "leemon": "6.2.0",
+    "lodash.debounce": "4.0.8",
+    "pako": "2.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.5",
+    "@types/node": "18.16.0",
+    "@typescript-eslint/eslint-plugin": "6.7.5",
+    "@typescript-eslint/parser": "6.7.5",
+    "eslint": "8.51.0",
+    "dotenv": "16.3.1",
+    "jest": "29.7.0",
+    "prettier": "3.0.3",
+    "ts-jest": "29.1.1",
+    "tsx": "3.13.0"
+  }
+}
